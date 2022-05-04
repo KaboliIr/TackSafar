@@ -1,0 +1,23 @@
+// The Footer
+.Footer{
+    background-color: var(--background-Six);
+
+a,h5{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+a:hover{
+    color: #bbbbbb;
+}
+.bi{
+    color: #fff !important;
+    transition: 1s;
+
+    &:hover{
+        font-size: 1.2rem;
+    }
+}
+    
+}
+

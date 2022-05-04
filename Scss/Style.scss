@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #F3F3F3;
+    font-family: 'Shabnam', sans-serif;
+}
+// The Heading popular Tour
+.BestTour-head,.BestHotel-head,.Commnet-head{
+    color: var(--background-Six);
+}
+.btn{
+    background-color: var(--background-Six) !important;
+    border: 1px solid var(--background-Six) !important;
+}
+.btn:hover{
+    background-color:var(--background-Seven) !important;
+    color: #fff !important;
+}
+.btn-outline-danger{
+    background-color: #fff !important;
+    color: var(--background-Six) !important;
+}
+// The Import Section
+@import "Color";
+@import "Nav";
+@import "Header";
+@import "Why";
+@import "Services";
+@import "Place";
+@import "Comment";
+@import "Footer";
