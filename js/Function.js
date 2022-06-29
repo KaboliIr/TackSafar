@@ -3,13 +3,15 @@ import {Btns,Circles,PageCommnet,LeftHotel,Left,Page} from './Element.js'
 
 // The Function Slider
 function SliderNext() { 
+  
     let Left=Page.MainSlider[0].style;
     if(Left.left=="" || Left.left=="0px"){
-        
+      CircleCenter();
       return  Left.left="-100%"
 
     }
     else if(Left.left=="-100%"){
+      Circleleft();
     return    Left.left="-200%"
     }
    
@@ -19,11 +21,13 @@ function SliderNext() {
  function SliderPre() { 
     let Left=Page.MainSlider[0].style;
         if(Left.left=="-200%"){
+          CircleCenter();
             
        return     Left.left="-100%"
     
         }
         else if(Left.left=="-100%"){
+          CircleRight();
            return Left.left="0"
         }
        
@@ -33,11 +37,12 @@ function SliderNext() {
   function SliderNextHotel() { 
     let Left=Page.MainSlider[1].style;
     if(Left.left=="" || Left.left=="0px"){
-        
+        CircleCenterHotel();
       return  Left.left="-100%"
 
     }
     else if(Left.left=="-100%"){
+      CircleleftHotel();
     return    Left.left="-200%"
     }
    
@@ -47,11 +52,13 @@ function SliderNext() {
  function SliderPreHotel() { 
     let Left=Page.MainSlider[1].style;
         if(Left.left=="-200%"){
+          CircleCenterHotel();
             
        return     Left.left="-100%"
     
         }
         else if(Left.left=="-100%"){
+          CircleRightHotel();
            return Left.left="0"
         }
        
