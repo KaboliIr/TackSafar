@@ -1,16 +1,6 @@
-:root{
-    --background: #F3F3F3;
-   --background_Two: #FFFFFFC9;
-   --background_Three: #898989C9;
-   --background_Four: #1F628E8C;
-   --background_Five: #2C87C3;
-   --background-Six: #EB9358;
-   --background-Seven: #CF7232D4;
-//    --background-Eight: #EB9358;
+// The Font
+@import "Color";
 
-}
-
-// The Login Page
 *{
     margin: 0;
     padding: 0;
@@ -21,35 +11,36 @@
 html,body{
     width: 100%;
     height: 100%;
+    font-family: 'Shabnam', sans-serif;
+    background-color: var(--background_Two);
+}
+// The Btn
+.btn{
     background-color: var(--background-Six);
+
+    &:hover{
+        background-color:var(--background-Seven);
+    }
 }
-
-.Menu{
-    width: 100%;
-    // height: 100px;
-     background-color: #fff;
-     position: fixed;
-     bottom: 0;
-     box-shadow:0px 3px 20px gray ;
-
-     a{
-         color: black;
-
-         .bi{
-             font-size: 3rem;
-             transition: 1s;
-
-             &:hover{
-                box-shadow: 3px 3px 20px lightgray;
-             }
-         }
-
-         &:hover{
-             color: var(--background-Six);
-             
-         }
-
-     }
+// The h1,h4
+h2,h6,small{
+    display: block;
+    color: var(--background_Five);
 }
-// The Style
+a{
+    text-decoration: none;
+    transition: 1s;
 
+    &:hover{
+        color: var(--background-Six);
+        font-size: 0.9rem;
+    }
+}
+i{
+    color: var(--background_Five);
+    transition: 1s;
+    &:hover{
+        color: var(--background-Six);
+        font-size: 1.1rem;
+    }
+}

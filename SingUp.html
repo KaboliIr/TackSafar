@@ -26,52 +26,66 @@
 <title>ثبت نام</title>
 </head>
 <body>
-<div id="Form" class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <form class="my-5 border border-danger p-5 rounded bg-light">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
+<!-- The Logo and Airplan -->
+<nav id="NavBar" class="py-2">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center">
+                <a href="#" class="Logo"><img src="Img/logo.png" class="img-fluid" alt=""></a>
             </div>
-        </div>
-    </div>
-</div>
+            <div class="col-lg-7 col-md-12 col-sm-12 d-lg-block d-none text-start pt-3">
+                <img src="Img/AirLine.png" class="img-fluid" alt="">
+                <img src="Img/LineVeryLongRight.png" class="img-fluid" alt="">
+            </div>
 
-<div class="Menu py-3">
-    <div class="container">
-        <div class="row">
-            <div class="col-4 text-center">
-                <a href="#">
-                    <i class="bi bi-door-open"></i>
-                </a>
-            </div>
-            <div class="col-4 text-center">
-                <a href="#" class="">
-                    <i class="rounded px-3 bi bi-envelope"></i>
-                </a>
-            </div>
-            <div class="col-4 text-center">
-                <a href="#">
-                    <i class="rounded bi bi-file-person"></i>
-                </a>
-            </div>
         </div>
     </div>
-</div>
+   
+</nav>
+<!-- The Section Form -->
+<section id="Form" class="py-4 py-lg-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 position-relative py-4 text-center">
+                <div class="row py-3">
+                    <!-- The Form -->
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <h2 class="text-center text-md-end">خوش آمدید</h2>
+                        <small class="text-center text-md-end d-block">برای خرید بلیط ابتدا وارد شوید</small>
+                        <form class="text-center text-md-end d-block ">
+                            <div class="form-group d-flex d-md-block justify-content-center">
+                              <input type="email" class="w-75 form-control shadow-sm rounded my-4 text-center text-md-end py-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="نام کاربردی">
+                            </div>
+                            <div class="form-group d-flex d-md-block justify-content-center">
+                              <input type="password" class="w-75 form-control shadow-sm rounded my-4 text-center text-md-end py-2" id="exampleInputPassword1" placeholder="رمز عبور">
+                              
+                            </div>
+                            <button type="submit" class="w-75 btn px-5 py-2 fs-5 text-white mt-4">ورود</button>
+                            <hr class="w-75 d-none d-md-block my-4">
+                            <small class="pt-4 pt-md-0 py-1"><a href="#">رمز خود را فراموش کردید</a></small>
+                            <small>هنوز <a href="#">ثبت نام</a> نکردم</small>
+                            <div class="row">
+                                <div class="col-lg-1 col-md-3 col-sm-4 py-3"><a href="#"><i class="bi bi-google"></i></a></div>
+                                <div class="col-lg-1 col-md-3 col-sm-4 py-3"><a href="#"><i class="bi bi-github"></i></a></div>
+                                <div class="col-lg-1 col-md-3 col-sm-4 py-3"><a href="#"><i class="bi bi-meta"></i></a></div>
+                            </div>
+                          </form>
+                    </div>
+                    <!-- The img inside Form -->
+                    <div class="col-lg-6">
+                        <div class="col-lg-11 col-sm-10 position-relative py-2 d-flex justify-content align-item-center">
+                            <img src="Img/Ellipse 26.png" class="img-fluid position-absolute" alt="">
+                            <img src="img/image 22.png" class="img-fluid position-absolute" alt="">
+                      
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</section>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>

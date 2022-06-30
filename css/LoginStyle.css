@@ -20,33 +20,41 @@
 html, body {
   width: 100%;
   height: 100%;
+  font-family: 'Shabnam', sans-serif;
+  background-color: var(--background_Two);
+}
+
+.btn {
   background-color: var(--background-Six);
 }
 
-.Menu {
-  width: 100%;
-  background-color: #fff;
-  position: fixed;
-  bottom: 0;
-  -webkit-box-shadow: 0px 3px 20px gray;
-          box-shadow: 0px 3px 20px gray;
+.btn:hover {
+  background-color: var(--background-Seven);
 }
 
-.Menu a {
-  color: black;
+h2, h6, small {
+  display: block;
+  color: var(--background_Five);
 }
 
-.Menu a .bi {
-  font-size: 3rem;
+a {
+  text-decoration: none;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.Menu a .bi:hover {
-  -webkit-box-shadow: 3px 3px 20px lightgray;
-          box-shadow: 3px 3px 20px lightgray;
+a:hover {
+  color: var(--background-Six);
+  font-size: 0.9rem;
 }
 
-.Menu a:hover {
+i {
+  color: var(--background_Five);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+i:hover {
   color: var(--background-Six);
+  font-size: 1.1rem;
 }
