@@ -19,3 +19,9 @@ export let LeftHotel=Page.MainSlider[1].style;
 // The Page
  export let PageCommnet=document.getElementById("Scroll");
 let x=0
+
+// The Person
+export const personLogin=document.getElementById("Person");
+
+//The Body
+export const Body=document.querySelector("body");

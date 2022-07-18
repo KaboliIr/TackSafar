@@ -11,6 +11,28 @@ html,body{
     background-color: #F3F3F3;
     font-family: 'Shabnam', sans-serif;
 }
+//----------- The Scroll Bar
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 7px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--background-Six); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--background-Seven); 
+  }
 // The Heading popular Tour
 .BestTour-head,.BestHotel-head,.Commnet-head{
     color: var(--background-Six);

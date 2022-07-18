@@ -1,5 +1,5 @@
 // The Export Element 
-import {Btns,Page,PageCommnet,Left,LeftHotel,Circles} from './Element.js';
+import {Btns,Page,PageCommnet,Left,LeftHotel,Circles,personLogin,Body} from './Element.js';
 // The Function
 import {Parallax,SliderNext,SliderPre,SliderPreHotel,SliderNextHotel,CircleCenter,CircleRight,Circleleft,CircleCenterHotel,CircleRightHotel,CircleleftHotel,CommentSlider} from './Function.js'
 // ---------Start---------------The Slider
@@ -46,14 +46,56 @@ Circles.left[1].addEventListener("click",CircleleftHotel);
 // The Page
 // let x=0
 
-  let Body=document.querySelector("body");
+ 
   Body.onload=CommentSlider;
 
+const data=JSON.parse(localStorage.getItem("User"));
+personLogin.classList="bi bi-bookmark-check-fill";
+personLogin.innerHTML+=`<small class="h6">${data.name}</small>`;
 
-//   The Link
-// const Link=document.querySelectorAll("a");
-// Link.forEach(element => {
-//     element.addEventListener("click",(e)=>{
-//         e.preventDefault();
-//     })
-// });
+
+// The Test
+function Login(){
+  const DataLogin=localStorage.getItem("User");
+  if(DataLogin){
+      const Toast = Swal.mixin({
+          toast: true,
+          position: 'top-end',
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+          }
+        })
+        
+        Toast.fire({
+          icon: 'success',
+          title: 'شما داخل سایت عضو هستید'
+        })
+  }
+  else{
+      
+      const Toast = Swal.mixin({
+          toast: true,
+          position: 'top-end',
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+          }
+        })
+        
+        Toast.fire({
+          icon: 'info',
+          title: ' هنوز داخل سایت ثبت نام نکردید'
+        })
+
+    
+  }
+}
+
+Body.onload=Login();
